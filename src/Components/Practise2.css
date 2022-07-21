@@ -1,0 +1,6 @@
+.myStyleText{
+    color : red;
+}
+.myStyleText:hover{
+    color : green;
+}

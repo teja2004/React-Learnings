@@ -1,11 +1,14 @@
 import './App.css';
+import React , {useState} from "react";
 import Practise1 from "./Components/Practise1.jsx";
 import Practise2 from "./Components/Practise2.jsx";
 import Practise3 from "./Components/Practise3.jsx";
 import Practise4 from './Components/Practise4.jsx';
 import Practise5 from './Components/Practise5.jsx';
+import Practise6 from './Components/Practise6.jsx';
+import Practise7 from './Components/Practise7';
 
-import React , {useState} from "react";
+
 
 function App() {
   setInterval(()=>{
@@ -52,6 +55,8 @@ function App() {
     <>
       <div className='text-end mx-2' id="timeShow" style={{height : "30px",color : color.color ,backgroundColor : color.backgroundColor}}></div>
       <Practise1 initialColor={color} toggleMode={toggleMode} myName={name} aboutMe={objMe}/>
+      <Practise7/>
+      <Practise6/>
       <Practise5/>
       <Practise4 letSay="I Will Say"/>
       <Practise3 myName="Nagateja" colorNew="green"/>
